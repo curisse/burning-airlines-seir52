@@ -2,6 +2,7 @@ class FlightsController < ApplicationController
   before_action :set_flight, only: %i[ show edit update destroy ]
   has_many :reservations
   belongs_to :airplane
+  has_many :users, :through => :reservation
 
 
   # GET /flights or /flights.json
