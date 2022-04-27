@@ -1,5 +1,8 @@
 class FlightsController < ApplicationController
   before_action :set_flight, only: %i[ show edit update destroy ]
+  has_many :reservations
+  belongs_to :airplane
+
 
   # GET /flights or /flights.json
   def index
