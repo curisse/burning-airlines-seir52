@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Flights extends Component {
+class CreateFlights extends Component {
     render(){
         return(
             <div>
@@ -11,4 +11,4 @@ class Flights extends Component {
 }
 
 
-export default Flights;
+export default CreateFlights;
