@@ -21,12 +21,11 @@ class SearchForm extends Component {
 
     _submitHandler(event) {
         event.preventDefault();
-        
-        const inputData = {
+        onSaveSearchData();
+        // const inputData = {
             
-        }
+        // }
     }
-
 
     render() {
         const {enteredoriginLocation,enteredDestination} = this.state;
