@@ -7,15 +7,17 @@ class FlightList extends Component {
             size: 0,
         }
     }
-    // render(){
-    //     let rows = [];
-    //     // for(let i = 0; i < this.state.)
-    //     return(
-    //         <div>
-    //             <Link to="/flight/:id"/>
-    //         </div>
-    //     )
-    // }
+    render(){
+        let rows = [];
+        for(let i = 0; i < this.state.size; i++){
+            let row  = `row${i}`
+        }
+        return(
+            <div>
+                {/* <Link to="/flight/:id"/> */}
+            </div>
+        )
+    }
 }
 
 export default FlightList;

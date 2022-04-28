@@ -2,7 +2,6 @@ import {Routes, Route} from 'react-router-dom';
 import Airplane from './Airplane';
 import CreateFlights from './CreateFlights';
 import Search from './Search';
-import SearchForm from './SearchForm';
 import Flight from './Flight';
 import {Link} from 'react-router-dom';
 import '../App.css';
@@ -28,6 +27,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
