@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {Component} from 'react';
+=======
+import React, {Component} from "react";
+>>>>>>> create-airplane-component
 
 class SearchForm extends Component {
     constructor(props){
@@ -21,9 +25,14 @@ class SearchForm extends Component {
 
     _submitHandler(event) {
         event.preventDefault();
+<<<<<<< HEAD
         
         const inputData = {
             
+=======
+        const inputData ={
+
+>>>>>>> create-airplane-component
         }
     }
 

@@ -7,6 +7,7 @@ class FlightList extends Component {
             size: 0,
         }
     }
+<<<<<<< HEAD
     render(){
         let rows = [];
         for(let i = 0; i < this.state.size; i++){
@@ -18,6 +19,19 @@ class FlightList extends Component {
             </div>
         )
     }
+=======
+    // render(){
+    //     let rows = [];
+    //     for(let i = 0; i < this.state.size; i++){
+    //         let row  = `row${i}`
+    //     }
+    //     return(
+    //         <div>
+    //             {/* <Link to="/flight/:id"/> */}
+    //         </div>
+    //     )
+    // }
+>>>>>>> create-airplane-component
 }
 
 export default FlightList;

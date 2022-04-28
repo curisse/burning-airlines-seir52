@@ -1,3 +1,4 @@
+
 import {Routes, Route} from 'react-router-dom';
 import Airplane from './Airplane';
 import CreateFlights from './CreateFlights';
@@ -28,4 +29,9 @@ function App() {
   );
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+
+export default App;
+>>>>>>> create-airplane-component
