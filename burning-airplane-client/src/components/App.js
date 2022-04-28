@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <div className='Nav'>
-        <Link to="/airplanes">Planes</Link>
-        ||||||
-        <Link to="/createflights">Create Flights</Link>
-        ||||||
-        <Link to="/search">Search</Link>
+        <Link to="/airplanes" className="Link">Planes</Link>
+
+        <Link to="/createflights" className="Link">Create Flights</Link>
+
+        <Link to="/search" className="Link">Search</Link>
       </div>
       <Routes>
         <Route path="/search" element={<Search/>}/>
