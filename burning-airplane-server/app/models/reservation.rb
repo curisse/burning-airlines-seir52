@@ -1,3 +1,3 @@
 class Reservation < ApplicationRecord
-    belongs_to :user, :flight
+    belongs_to :user, :flight, :optional => true
 end
