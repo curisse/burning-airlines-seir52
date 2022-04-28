@@ -22,9 +22,9 @@ class SearchForm extends Component {
     _submitHandler(event) {
         event.preventDefault();
         onSaveSearchData();
-        // const inputData = {
+        const inputData = {
             
-        // }
+        }
     }
 
     render() {
