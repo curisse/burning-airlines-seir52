@@ -7,10 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-u1 = User.create :email => 'admin@flight.com', :password => 'chicken', :admin => true
+u1 = User.create :user_name => 'admin'
 puts "#{ User.count } users"
 
 Flight.destroy_all
-f1 = Flight.create :flight_number => '1', :origin => 'Melbourne', :destination => 'Sydney', :date => '20/5/2022'
-puts "#{ Flight.count } comments"
+f1 = Flight.create :airplane_id => 1, :flight_number => 1, :origin => 'Melbourne', :destination => 'Sydney', :date => 2052022
+f2 = Flight.create :airplane_id => 2, :flight_number => 2, :origin => 'Melbourne', :destination => 'Sydney', :date => 2152022
+puts "#{ Flight.count } flights"
 

@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 import FlightList from './FlightList';
 import SearchForm from './SearchForm';
-import axios from 'axios';
+
 
 const SERVER_URL = 'http://localhost:3000/flights.json';
 
@@ -23,18 +23,20 @@ class Search extends Component{
         // create URL
         
         
-        axios.get(SERVER_URL, ).then((response)=> {
+        axios.get(SERVER_URL).then((response) => {
             console.log(response);
             if(response.status === 404){
                 this.setState({isURLValid : false});
                 return;
             }
-            const newList = [...this.state.stargazers,response.data];
-            console.log(newList);
-            this.setState({stargazers : response.data});
+
+            // const newOrigin = [...this.state.origin, response.data];
+            // const newDestination = [...this.state.destination, response.data];
+
+            this.setState({origin: response.data});
+            this.setState({destination: response.data});
             this.setState({isURLValid: true});
         });
-        
 
     }
 
