@@ -25,6 +25,7 @@ class SearchForm extends Component {
             origin: this.state.origin,
             destination: this.state.destination
         }
+        console.log(inputData);
         this.props.onSaveSearchData(inputData);
     }
 
@@ -35,9 +36,11 @@ class SearchForm extends Component {
                 <label>Origin: </label>
                 <input type="text" required  defaultValue={enteredoriginLocation || ""} onChange={this._originChangeHandler}></input>
                 <br></br><br></br>
+
                 <label>To: </label>
                 <input type="text" required defaultValue={enteredDestination || ""} onChange={this._destinationChangeHandler}></input>
                 <br></br><br></br>
+
                 <button type="submit">Search</button>
             </form>
         )

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 class FlightList extends Component {
     constructor(props){
@@ -14,7 +15,7 @@ class FlightList extends Component {
         }
         return(
             <div>
-                {/* <Link to="/flight/:id"/> */}
+                <Link to="/flight/:id"/>
             </div>
         )
     }

@@ -19,19 +19,13 @@ class Search extends Component{
     }
 
     searchSubmitHandler(inputData){
-        //make an AJAX request
-        // create URL
-        
-        
-        axios.get(SERVER_URL).then((response) => {
-            console.log(response);
+        console.log(inputData);
+        axios.get(SERVER_URL, { params: {origin: inputData.origin, destination: inputData.destination } } ).then((response) => {
+            console.log(response.data);
             if(response.status === 404){
                 this.setState({isURLValid : false});
                 return;
             }
-
-            // const newOrigin = [...this.state.origin, response.data];
-            // const newDestination = [...this.state.destination, response.data];
 
             this.setState({origin: response.data});
             this.setState({destination: response.data});
@@ -41,7 +35,7 @@ class Search extends Component{
     }
 
     render() {
-        console.log('hello!')
+
         return(
             
             <div>
@@ -54,3 +48,13 @@ class Search extends Component{
 }
 
 export default Search;
+
+
+// const flightParams = {
+//     origin: {origin: response.data},
+//     destination: {destination: response.data},
+// };
+
+
+
+

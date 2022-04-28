@@ -13,17 +13,13 @@ puts "#{ Airplane.count } airplanes"
 
 
 Flight.destroy_all
-f1 = Flight.create :origin => 'Melbourne', :airplane_id => 1
+f1 = Flight.create :flight_number => 1, :origin => 'Melbourne', :airplane_id => 1, :destination => 'Sydney'
+f2 = Flight.create :airplane_id => 2, :flight_number => 2, :origin => 'Melbourne', :destination => 'Sydney', :date => 2152022
+f3 = Flight.create :airplane_id => 3, :flight_number => 3, :origin => 'Gold Coast', :destination => 'Canberra', :date => 2552022
+
 puts "#{ Flight.count } flights"
 
 User.destroy_all
 u1 = User.create :user_name => 'admin'
 puts "#{ User.count } users"
-
-
-
-# Flight.destroy_all
-# f1 = Flight.create :airplane_id => 1, :flight_number => 1, :origin => 'Melbourne', :destination => 'Sydney', :date => 2052022
-# f2 = Flight.create :airplane_id => 2, :flight_number => 2, :origin => 'Melbourne', :destination => 'Sydney', :date => 2152022
-# puts "#{ Flight.count } flights"
 
