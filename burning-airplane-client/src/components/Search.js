@@ -41,7 +41,7 @@ class Search extends Component{
         return(
             <div>
                 <SearchForm onSaveSearchData={this.searchSubmitHandler}/>
-                <FlightList size={}/>
+                <FlightList/>
             </div>
         )
     }

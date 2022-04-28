@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+u1 = User.create :email => 'admin@flight.com', :password => 'chicken', :admin => true
+puts "#{ User.count } users"
+
+Flight.destroy_all
+f1 = Flight.create :flight_number => '1', :origin => 'Melbourne', :destination => 'Sydney', :date => '20/5/2022'
+puts "#{ Flight.count } comments"
+
