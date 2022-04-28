@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import axios from 'axios';
 import {Link} from 'react-router-dom';
 import FlightList from './FlightList';
 import SearchForm from './SearchForm';
@@ -41,7 +41,7 @@ class Search extends Component{
         return(
             <div>
                 <SearchForm onSaveSearchData={this.searchSubmitHandler}/>
-                <FlightList size={}/>
+                <FlightList/>
             </div>
         )
     }

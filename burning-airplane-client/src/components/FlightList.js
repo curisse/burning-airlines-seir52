@@ -9,10 +9,12 @@ class FlightList extends Component {
     }
     render(){
         let rows = [];
-        for(let i = 0; i < this.state.)
+        for(let i = 0; i < this.state.size; i++){
+            let row  = `row${i}`
+        }
         return(
             <div>
-                <Link to="/flights/:id"/>
+                {/* <Link to="/flight/:id"/> */}
             </div>
         )
     }

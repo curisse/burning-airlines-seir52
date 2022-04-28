@@ -1,3 +1,5 @@
+import React, {Component}from "react";
+
 class SearchForm extends Component {
     constructor(props){
         super(props);
@@ -20,7 +22,7 @@ class SearchForm extends Component {
     _submitHandler(event) {
         event.preventDefault();
         const inputData ={
-            
+
         }
 
 
